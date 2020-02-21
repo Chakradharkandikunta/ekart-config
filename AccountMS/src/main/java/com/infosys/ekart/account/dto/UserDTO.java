@@ -2,6 +2,11 @@ package com.infosys.ekart.account.dto;
 
 import com.infosys.ekart.account.entity.User;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class UserDTO {
 
 	String userId;
@@ -16,53 +21,33 @@ public class UserDTO {
 
 	String accountType;
 
-	public String getUserId() {
-		return userId;
-	}
-
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
-
-	public String getEmailId() {
-		return emailId;
-	}
-
-	public void setEmailId(String emailId) {
-		this.emailId = emailId;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public String getConfirmPassword() {
-		return confirmPassword;
-	}
-
-	public void setConfirmPassword(String confirmPassword) {
-		this.confirmPassword = confirmPassword;
-	}
-
-	public String getAccountType() {
-		return accountType;
-	}
-
-	public void setAccountType(String accountType) {
-		this.accountType = accountType;
-	}
+	/*
+	 * public String getUserId() { return userId; }
+	 * 
+	 * public void setUserId(String userId) { this.userId = userId; }
+	 * 
+	 * public String getEmailId() { return emailId; }
+	 * 
+	 * public void setEmailId(String emailId) { this.emailId = emailId; }
+	 * 
+	 * public String getName() { return name; }
+	 * 
+	 * public void setName(String name) { this.name = name; }
+	 * 
+	 * public String getPassword() { return password; }
+	 * 
+	 * public void setPassword(String password) { this.password = password; }
+	 * 
+	 * public String getConfirmPassword() { return confirmPassword; }
+	 * 
+	 * public void setConfirmPassword(String confirmPassword) { this.confirmPassword
+	 * = confirmPassword; }
+	 * 
+	 * public String getAccountType() { return accountType; }
+	 * 
+	 * public void setAccountType(String accountType) { this.accountType =
+	 * accountType; }
+	 */
 
 	// Converts Entity into DTO
 	public static UserDTO dtoObject(User user) {
